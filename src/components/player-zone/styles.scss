@@ -1,0 +1,42 @@
+@import '../../styles/variables.scss';
+@import '../../styles/screens.scss';
+
+
+.player-zone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+
+    @include mobile-screens {
+        margin-top: 4rem;
+    }
+}
+
+.player-headshot {
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    margin-bottom: 4rem;
+}
+
+.player-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.drink {
+    border-color: $drink-green;
+    color: $drink-green;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.water {
+    border-color: $water-blue;
+    color: $water-blue;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
