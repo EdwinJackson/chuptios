@@ -1,0 +1,21 @@
+@import '../../styles/variables.scss';
+
+.drain {
+    position: fixed;
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    z-index: -2;
+    background-color: $champagne;
+    animation: drain 5s linear;
+}
+
+@keyframes drain {
+    0% {
+        transform: translateY(0vh);
+    }
+    
+    100% {
+        transform: translateY(100vh);
+    }
+}
